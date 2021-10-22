@@ -4,16 +4,21 @@ variable "project_name" {
 }
 
 provider "aws" {
-  shared_credentials_file = "C:/Users/Wireless-Lala/.aws/credentials"
-  profile                 = "defult"
-  region                  = "eu-west-2"
+  
+    #  shared_credentials_file = "~/.aws/credentials"
+  #  shared_credentials_file = "%USERPROFILE%\.aws\credentials"
+  /*
+      Shared credential files is a text file with the following format:
+        [<PROFILE>]
+        aws_access_key_id = <ACCESS_KEY_ID>
+        aws_secret_access_key = <SECRET_ACCESS_KEY
+  */
+  shared_credentials_file = ""
+  profile                 = "default"
+  region                  = ""
 
 }
 
-
-variable "AmazonEC2FullAccess_arn" {}
-
-variable "AmazonS3FullAccess_arn" {}
 
 
 variable "AmazonRDSFullAccess_arn" {}

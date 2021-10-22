@@ -5,7 +5,7 @@
 3. Route table
 4. Launch configuration
 5. Autoscaling group
-6. 3 EC2 instances (application servers) with code deploy agents installed
+6. 1 EC2 instances (application servers) 
 7. An Application load balancer to load-balance the application servers
 
 
